@@ -1,3 +1,11 @@
 <!--pages/home/home.wxml-->
 <text class="textColor">Hello World!</text>
 <button size="mini">点击</button>
+
+<!-- 初体验 -->
+<view>姓名：{{name}}</view>
+
+<view wx:for="{{students}}">{{item.name}}-{{item.id}}</view>
+
+<view>当前计数：{{counter}}</view>
+<button size="mini" bindtap="addClick">+</button><button size="mini" bindtap="subClick">-</button>
